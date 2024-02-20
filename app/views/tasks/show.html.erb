@@ -1,0 +1,10 @@
+<h1>
+  <%= @task.title %>
+</h1>
+<%= @task.details %>
+<br>
+<%= @task.completed? ? "task completed" : "task not completed" %>
+<br>
+
+<%= link_to "modify", "#{@task.id}/edit" %>
+<%= link_to "return", "/tasks" %>
